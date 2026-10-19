@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "pregunta": "According to the ISO/IEC/IEEE 24765 definition cited in the text, Software Engineering includes which of the following elements?",
+    "opciones": [
+      { "letra": "A", "texto": "The application of a systematic, disciplined, quantifiable approach to software", "esVerdadera": true },
+      { "letra": "B", "texto": "The operation of software", "esVerdadera": true },
+      { "letra": "C", "texto": "The maintenance of software", "esVerdadera": true },
+      { "letra": "D", "texto": "The marketing of software products", "esVerdadera": false },
+      { "letra": "E", "texto": "The study of the approaches described above", "esVerdadera": true },
+      { "letra": "F", "texto": "The management of a company's IT budget", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 2,
+    "pregunta": "Which of the following are named in the chapter as canonical software development lifecycle (SDLC) models?",
+    "opciones": [
+      { "letra": "A", "texto": "Waterfall", "esVerdadera": true },
+      { "letra": "B", "texto": "Kanban", "esVerdadera": false },
+      { "letra": "C", "texto": "DevOps", "esVerdadera": false },
+      { "letra": "D", "texto": "Scrum", "esVerdadera": false },
+      { "letra": "E", "texto": "Spiral", "esVerdadera": true },
+      { "letra": "F", "texto": "Six Sigma", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 3,
+    "pregunta": "Which of the following stages does the text place under \"Development\" in the canonical software lifecycle?",
+    "opciones": [
+      { "letra": "A", "texto": "Ideation", "esVerdadera": false },
+      { "letra": "B", "texto": "Requirements", "esVerdadera": true },
+      { "letra": "C", "texto": "Design", "esVerdadera": true },
+      { "letra": "D", "texto": "Deployment", "esVerdadera": false },
+      { "letra": "E", "texto": "Construction", "esVerdadera": true },
+      { "letra": "F", "texto": "Integration", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 4,
+    "pregunta": "Which statements about Kanban WIP (work-in-progress) limits are accurate according to the text?",
+    "opciones": [
+      { "letra": "A", "texto": "They constrain the number of tasks allowed in \"doing\" columns", "esVerdadera": true },
+      { "letra": "B", "texto": "They are normally set higher than the number of team members", "esVerdadera": false },
+      { "letra": "C", "texto": "They can help reveal an overwhelmed team", "esVerdadera": true },
+      { "letra": "D", "texto": "They are unrelated to identifying dormant tasks", "esVerdadera": false },
+      { "letra": "E", "texto": "They are normally set to less than or equal to the number of team members", "esVerdadera": true },
+      { "letra": "F", "texto": "They apply only to the \"to do\" column", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 5,
+    "pregunta": "Which of the following are explicitly mentioned as reasons a feedback-based (agile) approach might be preferred over a plan-based one?",
+    "opciones": [
+      { "letra": "A", "texto": "The problem has significant unknowns", "esVerdadera": true },
+      { "letra": "B", "texto": "The business context is highly dynamic", "esVerdadera": true },
+      { "letra": "C", "texto": "The domain is subject to strict government regulation", "esVerdadera": false },
+      { "letra": "D", "texto": "The team wants to trade efficiency for adaptability", "esVerdadera": true },
+      { "letra": "E", "texto": "Life-or-death consequences of software errors must be minimized", "esVerdadera": false },
+      { "letra": "F", "texto": "The team wants to reduce uncertainty gradually as the project progresses", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 6,
+    "pregunta": "According to the text, what can happen at the \"Deployment\" stage if anomalous behaviour (e.g., CPU load, memory usage) is detected after release?",
+    "opciones": [
+      { "letra": "A", "texto": "The system should immediately be shut down permanently", "esVerdadera": false },
+      { "letra": "B", "texto": "A roll-back to the previously deployed version must be triggered", "esVerdadera": true },
+      { "letra": "C", "texto": "The requirements stage must be restarted from scratch", "esVerdadera": false },
+      { "letra": "D", "texto": "The anomaly should be compared against the previous version's behaviour", "esVerdadera": true },
+      { "letra": "E", "texto": "The client must be notified before any technical action is taken", "esVerdadera": false },
+      { "letra": "F", "texto": "Monitoring should continue over the initial hours or days after release", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 7,
+    "pregunta": "Which of the following are listed in the chapter as recommended \"micro-level\" work environment practices?",
+    "opciones": [
+      { "letra": "A", "texto": "Adopt a modern version management system such as git", "esVerdadera": true },
+      { "letra": "B", "texto": "Merge small, merge many, merge often", "esVerdadera": true },
+      { "letra": "C", "texto": "Avoid automation to retain manual control over releases", "esVerdadera": false },
+      { "letra": "D", "texto": "Adopt a branching naming convention traceable to ticket IDs", "esVerdadera": true },
+      { "letra": "E", "texto": "Keep the main trunk green (ready to deploy at all times)", "esVerdadera": true },
+      { "letra": "F", "texto": "Delay reverting a broken build until the next working day", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 8,
+    "pregunta": "In the traceability matrix example (Table 1.1) for requirement FR#45, which of the following are true?",
+    "opciones": [
+      { "letra": "A", "texto": "The requirement involves both a front-end and a back-end container", "esVerdadera": true },
+      { "letra": "B", "texto": "Only one component is involved in total", "esVerdadera": false },
+      { "letra": "C", "texto": "An existing file had to be modified to support the new functionality", "esVerdadera": true },
+      { "letra": "D", "texto": "A graphical asset file is included among the associated files", "esVerdadera": true },
+      { "letra": "E", "texto": "The requirement involves exactly one file per component", "esVerdadera": false },
+      { "letra": "F", "texto": "Multiple components exist within the back-end container alone", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 9,
+    "pregunta": "Which of the following does the text identify as things that should be monitored or checked during a software system's operational/maintenance phase?",
+    "opciones": [
+      { "letra": "A", "texto": "CPU, memory, and bandwidth usage", "esVerdadera": true },
+      { "letra": "B", "texto": "Normal users' activity", "esVerdadera": true },
+      { "letra": "C", "texto": "Attempted logins and denial-of-service attempts", "esVerdadera": true },
+      { "letra": "D", "texto": "The personal productivity of individual developers", "esVerdadera": false },
+      { "letra": "E", "texto": "Anomalies relative to the previously deployed version", "esVerdadera": true },
+      { "letra": "F", "texto": "The system's original ideation-stage business case", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 10,
+    "pregunta": "Which of the following practices are associated in the text with the \"Construction\" stage specifically (as opposed to Integration or System testing)?",
+    "opciones": [
+      { "letra": "A", "texto": "Test-driven development (writing tests before code)", "esVerdadera": true },
+      { "letra": "B", "texto": "Testing components together with external dependencies like a database", "esVerdadera": false },
+      { "letra": "C", "texto": "Requesting a peer review before a component is integrated", "esVerdadera": true },
+      { "letra": "D", "texto": "Verifying non-functional requirements such as performance", "esVerdadera": false },
+      { "letra": "E", "texto": "Checking test coverage of the code written", "esVerdadera": true },
+      { "letra": "F", "texto": "Using test doubles to mimic external dependencies", "esVerdadera": true }
+    ]
+  }
+]
