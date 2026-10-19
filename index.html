@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de Ingeniería de Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ingeniería de Software - Test App</h1>
+      <div id="progress-container">
+        <span id="progress-text">Pregunta 1 de 10</span>
+      </div>
+    </header>
+
+    <main id="quiz-card">
+      <h2 id="question-text">Cargando pregunta...</h2>
+      <p class="instruction">Marca la(s) casilla(s) de las opciones que consideres <strong>VERDADERAS</strong>. Deja sin marcar las <strong>FALSAS</strong>.</p>
+      
+      <div id="options-container" class="options-list"></div>
+
+      <div class="actions">
+        <button id="submit-btn">Comprobar Respuestas</button>
+        <button id="next-btn" class="hidden">Siguiente Pregunta</button>
+      </div>
+
+      <div id="feedback" class="feedback-box hidden"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
