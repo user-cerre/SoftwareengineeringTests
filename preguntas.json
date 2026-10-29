@@ -118,5 +118,473 @@
       { "letra": "E", "texto": "Checking test coverage of the code written", "esVerdadera": true },
       { "letra": "F", "texto": "Using test doubles to mimic external dependencies", "esVerdadera": true }
     ]
+  },
+  {
+    "id": 11,
+    "pregunta": "[W3] According to the text, which statements about a \"baseline\" are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "It is a snapshot of one version of each artefact in the repository at a given point in time.", "esVerdadera": true },
+      { "letra": "B", "texto": "It can be changed freely by any team member without any approval process.", "esVerdadera": false },
+      { "letra": "C", "texto": "In practice, it often refers to a specific released version of the whole product after integration.", "esVerdadera": true },
+      { "letra": "D", "texto": "Baselines are only relevant to legal contracts, not to software artefacts.", "esVerdadera": false },
+      { "letra": "E", "texto": "A release is composed of a set of individually baselined files from the repository.", "esVerdadera": true },
+      { "letra": "F", "texto": "Modern Version Control Systems can list the set of versioned files tied to a specific release.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 12,
+    "pregunta": "[W3] Which of the following are core problems that Configuration Management tries to address, per the text?",
+    "opciones": [
+      { "letra": "A", "texto": "Simultaneous update, where the last save overwrites a teammate's previous work.", "esVerdadera": true },
+      { "letra": "B", "texto": "Limited notification, where a shared artefact changes but not everyone is told.", "esVerdadera": true },
+      { "letra": "C", "texto": "Managing multiple versions of the same file across production, testing and development.", "esVerdadera": true },
+      { "letra": "D", "texto": "Deciding which programming language the team should adopt.", "esVerdadera": false },
+      { "letra": "E", "texto": "Slow compilation times during the build process.", "esVerdadera": false },
+      { "letra": "F", "texto": "Propagating a defect fix across the different versions in which it appears.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 13,
+    "pregunta": "[W3] Since git is a distributed VCS, which of these statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Each team member holds a full local copy of the repository and its history.", "esVerdadera": true },
+      { "letra": "B", "texto": "Once pushed, commits become visible to other team members through the shared repository.", "esVerdadera": true },
+      { "letra": "C", "texto": "Uncommitted local changes are automatically shared the next time any teammate pulls.", "esVerdadera": false },
+      { "letra": "D", "texto": "If a workstation fails, the project history can still be recovered as long as one other copy of the repository exists.", "esVerdadera": true },
+      { "letra": "E", "texto": "A unique commit history that was never pushed can be permanently lost if that workstation is lost.", "esVerdadera": true },
+      { "letra": "F", "texto": "git requires a central server in order to store any project history at all.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 14,
+    "pregunta": "[W3] Which commands belong to the very simple local workflow described (create file, check status, stage, commit, verify)?",
+    "opciones": [
+      { "letra": "A", "texto": "git status", "esVerdadera": true },
+      { "letra": "B", "texto": "git add newfile.txt", "esVerdadera": true },
+      { "letra": "C", "texto": "git commit -m \"message\"", "esVerdadera": true },
+      { "letra": "D", "texto": "git push", "esVerdadera": false },
+      { "letra": "E", "texto": "git branch", "esVerdadera": false },
+      { "letra": "F", "texto": "git log", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 15,
+    "pregunta": "[W3] Regarding git branching, which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Branching lets teams create independent versions of the repository for simultaneous development.", "esVerdadera": true },
+      { "letra": "B", "texto": "Finished work on a branch is typically merged back into the branch it originated from, e.g. the main trunk.", "esVerdadera": true },
+      { "letra": "C", "texto": "Two different developers can never work on the same branch at the same time.", "esVerdadera": false },
+      { "letra": "D", "texto": "A new branch can be created with git branch and navigated to with git checkout.", "esVerdadera": true },
+      { "letra": "E", "texto": "A feature branch can be deleted after it has been successfully merged.", "esVerdadera": true },
+      { "letra": "F", "texto": "Branching removes any need for communication between developers working on the same functionality.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 16,
+    "pregunta": "[W3] About trunk-based development, which of the following are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Teams merge back into the main/trunk branch simply and frequently, several times per hour.", "esVerdadera": true },
+      { "letra": "B", "texto": "It requires trusted, mature teams because every member can break production.", "esVerdadera": true },
+      { "letra": "C", "texto": "Feature toggles (flags) are often used to hide incomplete features from the deployed version.", "esVerdadera": true },
+      { "letra": "D", "texto": "It is the preferred approach for projects with complex, long-to-develop features needing separate branches.", "esVerdadera": false },
+      { "letra": "E", "texto": "If a merge breaks the main branch, it must be reverted immediately.", "esVerdadera": true },
+      { "letra": "F", "texto": "It is described as the only workflow that fully embraces continuous integration and delivery.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 17,
+    "pregunta": "[W3] About feature branching, which of the following are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Separate branches are created so multiple features or tasks can be worked on simultaneously.", "esVerdadera": true },
+      { "letra": "B", "texto": "Each feature branch is developed and tested in isolation from the main branch.", "esVerdadera": true },
+      { "letra": "C", "texto": "Gitflow and GitHub Flow are cited as popular workflows that incorporate feature branching.", "esVerdadera": true },
+      { "letra": "D", "texto": "Well-defined interfaces among functionalities help minimize conflicts when merging long-lived branches.", "esVerdadera": true },
+      { "letra": "E", "texto": "Feature branching guarantees zero integration conflicts, regardless of the application's structure.", "esVerdadera": false },
+      { "letra": "F", "texto": "Feature branching, not trunk-based development, is described as fully embracing continuous integration and delivery.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 18,
+    "pregunta": "[W3] Which descriptions of git commands match how they are presented in the text?",
+    "opciones": [
+      { "letra": "A", "texto": "git fetch --all retrieves information about all branches that exist in the remote shared repository.", "esVerdadera": true },
+      { "letra": "B", "texto": "git checkout is used to navigate onto an existing branch.", "esVerdadera": true },
+      { "letra": "C", "texto": "git merge integrates the changes of one branch into another, e.g. a feature branch into main.", "esVerdadera": true },
+      { "letra": "D", "texto": "git pull is used to synchronize a local branch with remote changes before pushing.", "esVerdadera": true },
+      { "letra": "E", "texto": "git commit sends local commits directly to teammates' machines, bypassing any shared repository.", "esVerdadera": false },
+      { "letra": "F", "texto": "git branch -d is used to delete a branch, e.g. after it has been merged.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 19,
+    "pregunta": "[W3] Regarding commit message conventions, which of the following are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "When a ticketing system is used, the ticket ID should appear at the start of the commit message.", "esVerdadera": true },
+      { "letra": "B", "texto": "Conventional Commits is one proposed standard, but teams may agree on their own convention instead.", "esVerdadera": true },
+      { "letra": "C", "texto": "The \"!\" marker must always be included in the type field, whether or not the change is breaking.", "esVerdadera": false },
+      { "letra": "D", "texto": "Scripts can scan commit messages to check compliance with the agreed format.", "esVerdadera": true },
+      { "letra": "E", "texto": "LLMs can summarize the output of git diff --cached into a suggested commit message.", "esVerdadera": true },
+      { "letra": "F", "texto": "Once adopted, a commit convention should be kept undocumented so it stays flexible.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 20,
+    "pregunta": "[W3] Regarding repository structure and file naming, which of the following are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The proposed filename format is {project_name}_{discipline}_{description}-v{M.n}.extension.", "esVerdadera": true },
+      { "letra": "B", "texto": "The field separator is always an underscore, while a hyphen separates words within a field.", "esVerdadera": true },
+      { "letra": "C", "texto": "Source code files must follow this exact same filename convention.", "esVerdadera": false },
+      { "letra": "D", "texto": "The DEV folder's structure should reflect the software architecture and detailed design as closely as possible.", "esVerdadera": true },
+      { "letra": "E", "texto": "Every folder must contain a root README.md, except the top-level folder, which serves a different purpose.", "esVerdadera": false },
+      { "letra": "F", "texto": "The REQ folder's CRM subfolder records change requests to requirements along with the rationale for each decision.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 21,
+    "pregunta": "[W4] The project management iron triangle (Section 4.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Scope, resources and schedule are the vertices of the triangle, with quality at its centre.", "esVerdadera": true },
+      { "letra": "B", "texto": "Delivering all features on schedule may increase costs, e.g. by hiring additional staff.", "esVerdadera": true },
+      { "letra": "C", "texto": "Under stress, a project can be delivered with all features, on time and within budget, and still achieve great quality.", "esVerdadera": false },
+      { "letra": "D", "texto": "Delivering on time and within budget means some features will have to be dropped.", "esVerdadera": true },
+      { "letra": "E", "texto": "Staying within budget while delivering all features may lead to late delivery.", "esVerdadera": true },
+      { "letra": "F", "texto": "Under stress, quality is the element that is protected at all costs.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 22,
+    "pregunta": "[W4] Sprint burn-down charts and tables (Section 4.3.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The chart depicts the estimated remaining effort until the end of the sprint.", "esVerdadera": true },
+      { "letra": "B", "texto": "The assignee of each task updates the estimated remaining time at the end of every working day.", "esVerdadera": true },
+      { "letra": "C", "texto": "The remaining estimate of a task can never be higher than on the previous day if work was performed.", "esVerdadera": false },
+      { "letra": "D", "texto": "The burn-down records the actual effort, which is the measure used to predict completion.", "esVerdadera": false },
+      { "letra": "E", "texto": "Actual effort should still be recorded, but its goal is to improve future estimates.", "esVerdadera": true },
+      { "letra": "F", "texto": "A Release Burn-down tracks user stories or requirements on a timeline based on sprints, not days.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 23,
+    "pregunta": "[W4] Gantt charts (Section 4.3.2). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "They show a task list on the left and a timeline (days, weeks or months) on the horizontal axis.", "esVerdadera": true },
+      { "letra": "B", "texto": "Task bars show duration through their length and start/finish through their position on the timeline.", "esVerdadera": true },
+      { "letra": "C", "texto": "Dependencies between tasks are shown by arrows or lines and help to understand the critical path.", "esVerdadera": true },
+      { "letra": "D", "texto": "Milestones are significant points, often drawn as diamond-shaped markers.", "esVerdadera": true },
+      { "letra": "E", "texto": "A limitation is that they make it hard to flag whether the project as a whole is on time.", "esVerdadera": false },
+      { "letra": "F", "texto": "Some agile teams use them loosely as a roadmap preview of longer-term goals.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 24,
+    "pregunta": "[W4] Earned-value charts (Section 4.3.3). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Earned Value (EV), also called BCWP, is the value of the work actually completed by a point in time.", "esVerdadera": true },
+      { "letra": "B", "texto": "In agile contexts, Actual Cost (AC) corresponds to the estimated effort.", "esVerdadera": false },
+      { "letra": "C", "texto": "Planned Value (PV) is also known as Budgeted Cost of Work Scheduled (BCWS).", "esVerdadera": true },
+      { "letra": "D", "texto": "In agile contexts, PV is the sum of the actual effort of all tasks executed per sprint.", "esVerdadera": false },
+      { "letra": "E", "texto": "The approach is more adequate for agile projects than for plan-based projects.", "esVerdadera": false },
+      { "letra": "F", "texto": "Earned-value charts do not show the efficiency of the effort put into the work.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 25,
+    "pregunta": "[W4] Estimation techniques (Sections 4.4.1 to 4.4.3). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "In Wideband Delphi, members estimate individually, reveal together, and extreme estimators explain their rationale.", "esVerdadera": true },
+      { "letra": "B", "texto": "Planning Poker uses cards with Fibonacci-sequence points.", "esVerdadera": true },
+      { "letra": "C", "texto": "Planning Poker works best with absolute estimates in hours rather than relative estimates.", "esVerdadera": false },
+      { "letra": "D", "texto": "Cards above 20 or 40 are recommended for large tasks, so they need not be broken down.", "esVerdadera": false },
+      { "letra": "E", "texto": "When using informal heuristics, the team should record the assumptions behind the estimates.", "esVerdadera": true },
+      { "letra": "F", "texto": "Humans are better at comparing effort than at assigning absolute values, so relative estimates are preferred.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 26,
+    "pregunta": "[W4] Function points and the Cone of Uncertainty (Sections 4.4.4 and 4.4.5). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Function points measure functionality from the user's perspective, independently of technology.", "esVerdadera": true },
+      { "letra": "B", "texto": "Function point inputs include External Inputs, External Outputs, External Inquiries, Internal Logical Files and External Interface Files.", "esVerdadera": true },
+      { "letra": "C", "texto": "Function points are well suited to estimate managerial, non-technical tasks.", "esVerdadera": false },
+      { "letra": "D", "texto": "COCOMO is a detailed analytic approach that is seldom used in Agile settings.", "esVerdadera": true },
+      { "letra": "E", "texto": "The Cone of Uncertainty says estimation errors start very large and decrease as the project advances.", "esVerdadera": true },
+      { "letra": "F", "texto": "The initial error margin should be set at about 5% of the estimate.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 27,
+    "pregunta": "[W4] Risk identification (Section 4.5.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "It is the most difficult part of risk management, because it involves identifying unknowns.", "esVerdadera": true },
+      { "letra": "B", "texto": "An open atmosphere where people feel safe to raise issues helps reveal risks.", "esVerdadera": true },
+      { "letra": "C", "texto": "The SEI Risk Taxonomy-Based Questionnaire can serve as a starting point for a list of risks.", "esVerdadera": true },
+      { "letra": "D", "texto": "In the Fact Consequence format, the \"fact\" is something that may happen in the future.", "esVerdadera": false },
+      { "letra": "E", "texto": "The word \"if\" is forbidden in risk statements, to avoid risk hypochondria.", "esVerdadera": false },
+      { "letra": "F", "texto": "\"The collapse of civilization can have an impact on our project\" is the ideal, actionable risk statement.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 28,
+    "pregunta": "[W4] Risk analysis (Section 4.5.2). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The Threshold-of-Success (ToS) is the bare minimum achievement criteria that must all be met for success.", "esVerdadera": true },
+      { "letra": "B", "texto": "A ToS should be limited to roughly 3 to 5 items.", "esVerdadera": true },
+      { "letra": "C", "texto": "An odd number of likelihood/impact categories is recommended, to allow a neutral middle option.", "esVerdadera": false },
+      { "letra": "D", "texto": "Exact numeric probability and impact figures must always be assigned to every risk.", "esVerdadera": false },
+      { "letra": "E", "texto": "The risk matrix, with likelihood on one axis and impact on the other, is the input to risk planning.", "esVerdadera": true },
+      { "letra": "F", "texto": "ToS goals should be kept deliberately vague so that they remain flexible.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 29,
+    "pregunta": "[W4] Risk planning, monitoring and conclusions (Sections 4.5.3 to 4.6). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "\"Avoid\" aims to reduce the impact of the consequence if the risk occurs.", "esVerdadera": false },
+      { "letra": "B", "texto": "\"Accept\" means ignoring the risk completely, with no action at all.", "esVerdadera": false },
+      { "letra": "C", "texto": "\"Mitigate\" aims to remove the root cause of the risk.", "esVerdadera": false },
+      { "letra": "D", "texto": "Risk mitigation tasks should become a major part of the project effort.", "esVerdadera": false },
+      { "letra": "E", "texto": "Once a risk becomes a problem, it remains in the scope of risk management.", "esVerdadera": false },
+      { "letra": "F", "texto": "The risk matrix is static, so it never needs to be updated after it is drawn.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 30,
+    "pregunta": "[W5] Testing defined (Section 8.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Testing involves exercising software with concrete inputs and checking the output for correctness.", "esVerdadera": true },
+      { "letra": "B", "texto": "Testing ensures the absence of errors in a codebase.", "esVerdadera": false },
+      { "letra": "C", "texto": "Testing increases our trust in the codebase, which has value in and of itself.", "esVerdadera": true },
+      { "letra": "D", "texto": "Testing is the same as debugging, i.e. identifying where the defect is and correcting it.", "esVerdadera": false },
+      { "letra": "E", "texto": "The tester identifies the circumstances that trigger a defect; ideally the developer then debugs and fixes it.", "esVerdadera": true },
+      { "letra": "F", "texto": "The effort to maintain a codebase grows exponentially with its size, but only linearly when comprehensive tests are in place.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 31,
+    "pregunta": "[W5] Test cases, tests as code and the AAA structure (Sections 8.1 and 8.2). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "\"Check login with valid password\" is a very concrete scenario, thus serves as a good test specification.", "esVerdadera": false },
+      { "letra": "B", "texto": "A scenario with a specific username and password and a specified expected result is a correctly specified test case.", "esVerdadera": true },
+      { "letra": "C", "texto": "Expressing tests as code lets us re-run them after a fix or change and opens the way to CI/CD automation.", "esVerdadera": true },
+      { "letra": "D", "texto": "Tests-as-code do not need to follow any agreed format.", "esVerdadera": false },
+      { "letra": "E", "texto": "In the AAA style, the Assert step prepares the SUT to be exercised.", "esVerdadera": false },
+      { "letra": "F", "texto": "An optional fourth step, Clean-up, may be needed to restore the state of an external entity such as a database.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 32,
+    "pregunta": "[W5] Test selection and boundary value testing (Sections 8.3 and 8.3.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Exhaustive testing cannot be achieved even for a trivial program, because the set of inputs is virtually infinite.", "esVerdadera": true },
+      { "letra": "B", "texto": "A redundant test, or one that checks nothing relevant, is dead weight that must be maintained.", "esVerdadera": true },
+      { "letra": "C", "texto": "Boundary value testing uses only the minimum and maximum values of an input.", "esVerdadera": false },
+      { "letra": "D", "texto": "Boundary value testing rests on the observation that errors tend to cluster at the boundaries of inputs.", "esVerdadera": true },
+      { "letra": "E", "texto": "Boundary value testing is well suited to enumerated variables such as booleans.", "esVerdadera": false },
+      { "letra": "F", "texto": "Its effectiveness is independent of how well the component under test has been specified.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 33,
+    "pregunta": "[W5] Equivalence partitioning, state-transition and black-box testing (Sections 8.3.2 and 8.3.3). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Equivalence class partitioning divides the input data into classes that lead to equivalent results.", "esVerdadera": true },
+      { "letra": "B", "texto": "The goal is to reduce repeated tests while ensuring that each output partition is tested at least once.", "esVerdadera": true },
+      { "letra": "C", "texto": "Invalid inputs cannot lead to different output partitions.", "esVerdadera": false },
+      { "letra": "D", "texto": "State-transition testing evaluates behaviour as the application moves between states, e.g. whether a required sequence is followed.", "esVerdadera": true },
+      { "letra": "E", "texto": "These techniques are classified as black-box, as they ignore the internal structure of the source code.", "esVerdadera": true },
+      { "letra": "F", "texto": "Data-driven testing is always a black-box technique.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 34,
+    "pregunta": "[W5] LLM support in unit testing (Section 8.4). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "If the source code exists, it should be provided to the LLM as context together with a request to generate tests.", "esVerdadera": true },
+      { "letra": "B", "texto": "LLMs can help generate edge cases, create tests in a specific framework and update tests when the code changes.", "esVerdadera": true },
+      { "letra": "C", "texto": "A single generic prompt is enough: there is no need to specify the language or framework, or to iterate.", "esVerdadera": false },
+      { "letra": "D", "texto": "Without source code (test-first), a natural-language description or the function signature can be provided.", "esVerdadera": true },
+      { "letra": "E", "texto": "An LLM cannot generate tests unless the implementation already exists.", "esVerdadera": false },
+      { "letra": "F", "texto": "White-box tests should be favoured over black-box tests because they are more resilient to code changes.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 35,
+    "pregunta": "[W5] Testing and complexity management (Section 8.5). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Striving for testability enforces high modularity, otherwise tests would be unmanageably long and complex.", "esVerdadera": true },
+      { "letra": "B", "texto": "It is simpler to prepare a small module for testing (the Arrange step) than a large one.", "esVerdadera": true },
+      { "letra": "C", "texto": "Thinking about how to test a feature naturally leads us to group related concepts into cohesive modules.", "esVerdadera": true },
+      { "letra": "D", "texto": "Designing simple and fast tests pushes us to avoid dependencies, i.e. to reduce coupling.", "esVerdadera": true },
+      { "letra": "E", "texto": "Low coupling and high cohesion are achieved through separation of concerns (\"one class, one thing, one method, one thing\").", "esVerdadera": true },
+      { "letra": "F", "texto": "A testing mindset is fractal: it looks for coherence at each layer of abstraction.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 36,
+    "pregunta": "[W5] The testing pyramid: test levels (Section 8.6). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Unit tests form the base of the pyramid and should be the major number of tests (around 70% or more).", "esVerdadera": true },
+      { "letra": "B", "texto": "Unit tests target functionality with no external dependencies, so hundreds or thousands can run within seconds.", "esVerdadera": true },
+      { "letra": "C", "texto": "Integration tests validate interactions and interfaces between components, including external dependencies (around 20% or less).", "esVerdadera": true },
+      { "letra": "D", "texto": "System tests are also where quality attributes such as performance, scalability and stress are checked.", "esVerdadera": true },
+      { "letra": "E", "texto": "System tests are cheap and stable, so as many as possible should be automated.", "esVerdadera": false },
+      { "letra": "F", "texto": "A test of a unit that depends on other software units cannot be considered a unit test.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 37,
+    "pregunta": "[W5] The testing pyramid: rationale and the ice-cream antipattern (Section 8.6). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The ice-cream antipattern means having many unit tests and only a few system tests.", "esVerdadera": false },
+      { "letra": "B", "texto": "The pyramid promotes a small foundation of unit tests topped by many system tests.", "esVerdadera": false },
+      { "letra": "C", "texto": "In the ice-cream antipattern, locating a defect takes about the same effort as with a unit test.", "esVerdadera": false },
+      { "letra": "D", "texto": "System tests are not flaky, because the availability of the whole system makes them stable.", "esVerdadera": false },
+      { "letra": "E", "texto": "Acceptance tests are automated tests that form the base of the testing pyramid.", "esVerdadera": false },
+      { "letra": "F", "texto": "For system tests, the sensible strategy is to automate every possible end-user interaction.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 38,
+    "pregunta": "[W5] Other categories of tests (Section 8.6). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Acceptance tests are manual tests, normally performed by the client or end-users, and fall outside the testing pyramid.", "esVerdadera": true },
+      { "letra": "B", "texto": "User Acceptance Testing is automated and performed before the system tests.", "esVerdadera": false },
+      { "letra": "C", "texto": "A/B testing compares versions of a component by randomly splitting accesses; it needs a deployed application.", "esVerdadera": true },
+      { "letra": "D", "texto": "Exploratory testing involves manually exploring the software without a predefined test plan or script.", "esVerdadera": true },
+      { "letra": "E", "texto": "\"Functional testing\" is a term used only for acceptance tests.", "esVerdadera": false },
+      { "letra": "F", "texto": "Exploratory testing requires a predefined script so that results are reproducible.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 39,
+    "pregunta": "[W5] Test doubles and the chapter conclusions (Sections 8.7 and 8.8). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Test doubles are code that replaces and emulates the behaviour of other parts of the code.", "esVerdadera": true },
+      { "letra": "B", "texto": "They are typically used to replace external dependencies that are slow or lead to flaky tests.", "esVerdadera": true },
+      { "letra": "C", "texto": "They can stand in for dependencies that are not yet available, e.g. in a top-to-bottom construction plan.", "esVerdadera": true },
+      { "letra": "D", "texto": "A test mock mimics dynamic behaviour, allowing verification of how a component interacts with its dependency.", "esVerdadera": true },
+      { "letra": "E", "texto": "A test stub returns a predetermined value, and the tests of the dependent component need to be aware of it.", "esVerdadera": true },
+      { "letra": "F", "texto": "Using test doubles turns unit tests into integration tests.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 40,
+    "pregunta": "[W6] Automation: motivation and scope (chapter introduction). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Running a test manually may be acceptable once or twice, but it soon becomes unfeasible and error-prone.", "esVerdadera": true },
+      { "letra": "B", "texto": "Test automation exempts us from writing the tests in the first place.", "esVerdadera": false },
+      { "letra": "C", "texto": "As the codebase grows and more tests are added, the effort of running them remains the same: just start a script.", "esVerdadera": true },
+      { "letra": "D", "texto": "Automation is limited to running tests; other tasks must still be done by hand.", "esVerdadera": false },
+      { "letra": "E", "texto": "Any service available as a command can be triggered by an automation script (compiling, syntax checking, deploying, messaging developers...).", "esVerdadera": true },
+      { "letra": "F", "texto": "Reducing the test effort increases the likelihood of identifying defects early, ideally right after they are introduced.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 41,
+    "pregunta": "[W6] Basics of GitLab CI: the .gitlab-ci.yml file and runners (Section 10.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The automation script is stored in the .gitlab-ci.yml file in the project root folder.", "esVerdadera": true },
+      { "letra": "B", "texto": "By default, the jobs run on the developer's own local machine.", "esVerdadera": false },
+      { "letra": "C", "texto": "The commands in the script are the same ones we would run on the command line (echo, date, pwd...).", "esVerdadera": true },
+      { "letra": "D", "texto": "By default, the jobs run in GitLab-hosted Docker containers: think of a freshly installed machine.", "esVerdadera": true },
+      { "letra": "E", "texto": "With no trigger criteria defined, the script runs whenever a new commit is made visible in the GitLab instance via a git push.", "esVerdadera": true },
+      { "letra": "F", "texto": "Committing only in your local machine is enough to trigger the pipeline.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 42,
+    "pregunta": "[W6] Defining the environment of a test job (Section 10.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "\"image: python\" is needed because the default Docker image in GitLab is Ruby.", "esVerdadera": true },
+      { "letra": "B", "texto": "A \"pip install -r requirements.txt\" command is needed in the script because the runner is a fresh environment without your dependencies.", "esVerdadera": true },
+      { "letra": "C", "texto": "If no image is specified, GitLab uses a Python image by default.", "esVerdadera": false },
+      { "letra": "D", "texto": "The before_script keyword defines additional setup tasks that run before the remaining script.", "esVerdadera": true },
+      { "letra": "E", "texto": "With unittest, \"python -m unittest discover dir/\" discovers all the test files in a folder, so they need not be called one by one.", "esVerdadera": true },
+      { "letra": "F", "texto": "The runner reuses the Python packages already installed on your machine.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 43,
+    "pregunta": "[W6] Stages and jobs (Section 10.1.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "Jobs in the same stage run in parallel, so a priori no specific execution order can be assumed among them.", "esVerdadera": true },
+      { "letra": "B", "texto": "Jobs in later stages wait until all jobs in the preceding stages terminate.", "esVerdadera": true },
+      { "letra": "C", "texto": "The straightforward way to impose an execution order between two jobs is to put them in the same stage.", "esVerdadera": false },
+      { "letra": "D", "texto": "Jobs of the same stage always run one at a time, in the order in which they are written.", "esVerdadera": false },
+      { "letra": "E", "texto": "The keyword \"needs\" can be used to make jobs start earlier than the stage ordering would allow.", "esVerdadera": true },
+      { "letra": "F", "texto": "A pipeline must have exactly four stages: Static Analysis, Test, Security and Deploy.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 44,
+    "pregunta": "[W6] Triggers, failures and good practices in job definition (Section 10.1.2). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "With \"only: merge_requests\", the linting and complexity jobs (in the example of the chapter) are activated only on merge requests.", "esVerdadera": true },
+      { "letra": "B", "texto": "A script can only be triggered by a commit; other events are not supported.", "esVerdadera": false },
+      { "letra": "C", "texto": "By default, a failed job aborts the pipeline, so the following stages are never executed.", "esVerdadera": true },
+      { "letra": "D", "texto": "\"allow_failure: true\" lets the pipeline continue; the stage is marked as \"passed with warnings\".", "esVerdadera": true },
+      { "letra": "E", "texto": "Good practice is to place all commands in a single job to keep the file short.", "esVerdadera": false },
+      { "letra": "F", "texto": "Passwords should be written directly in the script so that every runner can find them.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 45,
+    "pregunta": "[W6] Static analysis tools, coverage and artifacts (Sections 10.1.2 and 10.1.3). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "When the pipeline terminates, its dedicated environment is discarded and all data in it is lost.", "esVerdadera": true },
+      { "letra": "B", "texto": "The \"artifacts:\" keyword instructs GitLab CI to store specified files after the job finishes.", "esVerdadera": true },
+      { "letra": "C", "texto": "Artifacts are stored in the original repository, e.g. in the ./my-tests folder.", "esVerdadera": false },
+      { "letra": "D", "texto": "Running \"coverage xml\" generates a Cobertura-compatible XML test coverage report.", "esVerdadera": true },
+      { "letra": "E", "texto": "pylint is the tool used in the example to compute cyclomatic complexity and the maintainability index.", "esVerdadera": false },
+      { "letra": "F", "texto": "radon is a Python tool that computes metrics such as cyclomatic complexity, maintainability index and Halstead metrics.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 46,
+    "pregunta": "[W6] Rules, manual jobs and deploy scripts (Section 10.1.4). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The \"rules\" keyword can restrict a job to certain branches, e.g. only main and staging.", "esVerdadera": true },
+      { "letra": "B", "texto": "In the example, the security checks are only performed on feature branches.", "esVerdadera": false },
+      { "letra": "C", "texto": "When a job's rule is not satisfied, the pipeline simply skips it and moves on to the next stage.", "esVerdadera": true },
+      { "letra": "D", "texto": "\"when: manual\" keeps the pipeline waiting for an explicit trigger in the GitLab UI, useful for a final human check before deployment.", "esVerdadera": true },
+      { "letra": "E", "texto": "The deploy commands must be written inline in .gitlab-ci.yml; calling a separate shell script is not possible.", "esVerdadera": false },
+      { "letra": "F", "texto": "Only the commands pre-installed by GitLab can be run in a job.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 47,
+    "pregunta": "[W6] Automation tool versus the commands it runs (end of Section 10.1). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The CI tool reads the automation file, creates the environment(s) and orchestrates the pipeline stages.", "esVerdadera": true },
+      { "letra": "B", "texto": "The hierarchy is: pipeline stages contain named jobs, which contain the specific commands to execute.", "esVerdadera": true },
+      { "letra": "C", "texto": "pytest, coverage and bandit are examples of automation tools, like GitLab CI.", "esVerdadera": false },
+      { "letra": "D", "texto": "Jenkins, GitHub Actions, Travis CI and Atlassian Bamboo are other automation tools.", "esVerdadera": true },
+      { "letra": "E", "texto": "CI/CD syntaxes are grouped in three families: procedural, declarative and functional.", "esVerdadera": false },
+      { "letra": "F", "texto": "Pipeline visual displays are read-only: jobs cannot be replayed or triggered from them.", "esVerdadera": false }
+    ]
+  },
+  {
+    "id": 48,
+    "pregunta": "[W6] Benefits and reach of automation (Section 10.2). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "The developer creates application code for the client's requirements but also automation code that supports their own development tasks.", "esVerdadera": true },
+      { "letra": "B", "texto": "Automation scripts are created, managed and shared by the whole team, not by each developer individually.", "esVerdadera": true },
+      { "letra": "C", "texto": "Libraries of automation scripts are rare, so each project has to write its own from scratch.", "esVerdadera": false },
+      { "letra": "D", "texto": "Automation can generate reports that give evidence for decision making, e.g. early identification of quality and progress issues.", "esVerdadera": true },
+      { "letra": "E", "texto": "Automation is limited to the developer's own machine.", "esVerdadera": false },
+      { "letra": "F", "texto": "Continuous Practices is the name given to CI/CD because it can include integration, documentation, delivery, deployment, certification, monitoring and more.", "esVerdadera": true }
+    ]
+  },
+  {
+    "id": 49,
+    "pregunta": "[W6] LLM support for writing and debugging automation scripts (Section 10.3). Which statements are correct?",
+    "opciones": [
+      { "letra": "A", "texto": "LLMs can help from creating templates to debugging issues in automation scripts.", "esVerdadera": true },
+      { "letra": "B", "texto": "LLM support is limited to GitLab; other tools such as GitHub Actions or Jenkins are not covered.", "esVerdadera": false },
+      { "letra": "C", "texto": "LLMs can analyse and describe a provided script, and spot wrong indentation, misplaced keys, missing dependencies or shell command typos.", "esVerdadera": true },
+      { "letra": "D", "texto": "LLM output can be accepted as is, because errors in pipelines are easier to spot than in source code.", "esVerdadera": false },
+      { "letra": "E", "texto": "Errors latent in a pipeline can be more insidious and harder to spot than errors in source code, so proceed step by step and test thoroughly.", "esVerdadera": true },
+      { "letra": "F", "texto": "LLMs can suggest best practices such as job caching, secrets management, parallelization and proper use of job dependencies or needs.", "esVerdadera": true }
+    ]
   }
 ]
